@@ -35,6 +35,7 @@ function displayTasks() {
     const describe = document.createElement('p');
     describe.textContent = description;
     const more = document.createElement('div');
+    more.className = 'more'
     const box = document.createElement('div');
     const box1 = document.createElement('div');
     const box2 = document.createElement('div');
