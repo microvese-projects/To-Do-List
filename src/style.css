@@ -6,6 +6,8 @@
 body {
   background: rgba(0, 0, 0, 0.05);
   min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 #tile {
@@ -14,6 +16,7 @@ body {
   margin-inline: auto;
   width: 100%;
   max-width: 700px;
+  box-shadow: 0px 0px 15px rgb(199, 199, 199);
 }
 
 #header {
@@ -64,4 +67,22 @@ form label {
   height: 4px;
   width: 4px;
   margin: 3px;
+}
+
+#clear-all {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  color: gray;
+  background: rgb(241, 240, 240);
+  cursor: pointer;
+}
+
+#clear-all p {
+  width: max-content;
+}
+
+#clear-all p:hover {
+  color: black;
+  border-bottom: 1px solid;
 }
