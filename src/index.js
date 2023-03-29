@@ -1,4 +1,5 @@
 import "./style.css";
+// import Refresh from './refresh.png';
 
 const tasks = [
   {
@@ -26,7 +27,7 @@ const tasks = [
 function displayTasks() {
   console.log("called")
   tasks.forEach(({
-    description, completed, index,
+    description,
   }) => {
     const ul = document.createElement('li');
     ul.className = 'to-do-item';
