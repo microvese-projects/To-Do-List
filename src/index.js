@@ -1,5 +1,5 @@
 import './style.css';
-// import Refresh from './refresh.png';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const tasks = [
   {

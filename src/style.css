@@ -22,6 +22,13 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
+  align-items: center;
+}
+
+#reset {
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
 }
 
 form label {
@@ -33,6 +40,10 @@ form label {
   padding: 10px 20px;
   font-size: 1.1rem;
   font-style: italic;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
 }
 
 .to-do-item {
