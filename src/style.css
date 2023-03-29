@@ -21,7 +21,7 @@ form label {
 }
 
 #entry {
-  width: 100%;
+  width: calc(100% - 45px);
   padding: 10px 20px;
   font-size: 1.1rem;
   font-style: italic;
@@ -35,20 +35,26 @@ form label {
   padding: 10px 20px;
 }
 
-.box,
-.box::after,
-.box::before {
-  background-color: gray;
-  height: 5px;
-  width: 5px;
+.more {
+  width: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.box::after,
-.box::before {
-  content: '';
+.more:hover {
+  cursor: all-scroll;
 }
 
-.box::after {
-  width: 20px;
-  margin-top: 5px;
+.more:hover .box {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.box {
+  background-color: lightgray;
+  border-radius: 50%;
+  height: 4px;
+  width: 4px;
+  margin: 3px;
 }
