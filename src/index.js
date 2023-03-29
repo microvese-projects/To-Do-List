@@ -36,8 +36,14 @@ function displayTasks() {
     describe.textContent = description;
     const more = document.createElement('div');
     const box = document.createElement('div');
+    const box1 = document.createElement('div');
+    const box2 = document.createElement('div');
     box.className = 'box';
+    box1.className = 'box';
+    box2.className = 'box';
     more.appendChild(box);
+    more.appendChild(box1);
+    more.appendChild(box2);
     ul.appendChild(checkbox);
     ul.appendChild(describe);
     ul.appendChild(more);
