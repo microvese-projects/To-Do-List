@@ -8,6 +8,8 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  font-family: monospace;
+  font-size: 16px;
 }
 
 #tile {
@@ -25,10 +27,17 @@ body {
   align-items: center;
 }
 
+#list-title {
+  font-weight: 400;
+}
+
 #reset {
-  height: 10px;
-  width: 10px;
   cursor: pointer;
+  color: gray;
+}
+
+#reset:hover {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 form label {
@@ -40,6 +49,9 @@ form label {
   padding: 10px 20px;
   font-size: 1.1rem;
   font-style: italic;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 input[type="checkbox"] {
@@ -51,7 +63,7 @@ input[type="checkbox"] {
   grid-template-columns: 20px 1fr 20px;
   gap: 20px;
   align-items: center;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 10px 20px;
 }
 
@@ -94,5 +106,5 @@ input[type="checkbox"] {
 
 #clear-all p:hover {
   color: black;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
 }
