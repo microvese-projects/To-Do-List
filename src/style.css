@@ -12,11 +12,10 @@ body {
 
 #tile {
   background: #fff;
-  width: 70%;
   margin-inline: auto;
   width: 100%;
   max-width: 700px;
-  box-shadow: 0px 0px 15px rgb(199, 199, 199);
+  box-shadow: 0 0 15px rgb(199, 199, 199);
 }
 
 #header {
@@ -57,16 +56,16 @@ form label {
   cursor: all-scroll;
 }
 
-.more:hover .box {
-  background: rgba(0, 0, 0, 0.8);
-}
-
 .box {
   background-color: lightgray;
   border-radius: 50%;
   height: 4px;
   width: 4px;
   margin: 3px;
+}
+
+.more:hover .box {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 #clear-all {

@@ -1,31 +1,30 @@
-import "./style.css";
+import './style.css';
 // import Refresh from './refresh.png';
 
 const tasks = [
   {
-    description: "Take out trash.",
+    description: 'Take out trash.',
     completed: false,
     index: 0,
   },
   {
-    description: "Cook lunch.",
+    description: 'Cook lunch.',
     completed: false,
     index: 1,
   },
   {
-    description: "Clean the house.",
+    description: 'Clean the house.',
     completed: false,
     index: 2,
   },
   {
-    description: "Submit the project.",
+    description: 'Submit the project.',
     completed: false,
     index: 3,
   },
-]
+];
 
 function displayTasks() {
-  console.log("called")
   tasks.forEach(({
     description,
   }) => {
@@ -36,7 +35,7 @@ function displayTasks() {
     const describe = document.createElement('p');
     describe.textContent = description;
     const more = document.createElement('div');
-    more.className = 'more'
+    more.className = 'more';
     const box = document.createElement('div');
     const box1 = document.createElement('div');
     const box2 = document.createElement('div');
@@ -50,8 +49,8 @@ function displayTasks() {
     ul.appendChild(describe);
     ul.appendChild(more);
 
-    document.querySelector('#to-dos').appendChild(ul)
-  })
+    document.querySelector('#to-dos').appendChild(ul);
+  });
 }
 
-displayTasks()
+displayTasks();
